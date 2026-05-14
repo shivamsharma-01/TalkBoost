@@ -2,12 +2,21 @@ import React from 'react'
 import words from '../data/Words';
 import Navbar from './Navbar';
 import Foooter from './Foooter';
+import { motion } from "motion/react"
+
 
 const WordCard = () => {
     return (
 
         <div className='bg-[#1d202e]'>
             <Navbar/>
+
+            <motion.div
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.6 }}
+                        viewport={{ once: true }}
+                    >
 
             <h1 className='text-white text-2xl mt-8 mb-8 p-10 flex justify-center'>1500+ Common English words with Hindi meaning | Word Meaning in Hindi</h1>
             <div className="p-6">
@@ -46,6 +55,7 @@ const WordCard = () => {
 
             </div>
             <Foooter/>
+            </motion.div>
         </div>
     )
 }

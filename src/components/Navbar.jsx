@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { motion } from "motion/react"
+import { motion } from "framer-motion"
 import { IoMenu } from "react-icons/io5";
 import { IoClose } from "react-icons/io5";
 
@@ -28,33 +28,35 @@ const Navbar = () => {
                         }}
                         className='h-12 '
                     />
-                    {/* <img   /> */}
-                    <span className="text-[#334155] mt-1.5">Your</span>
+
+
+                    <span className="text-[#d7e4f7] mt-1.5">Your</span>
                     <span className="text-[#fca5a5] mt-1.5">Voice</span>
                 </div>
 
                 <ul className="hidden md:flex items-center gap-8 text-zinc-300 lg:gap-17">
                     <li className="hover:text-white transition">
                         <Link to="/">Home</Link></li>
-                    <li className="hover:text-white transition">
-                        <Link to="/features">Features</Link></li>
+
                     <li className="hover:text-white  transition  rounded-4xl p-1 pl-5 bg-[#3579a0] text-black text-lg font-bold ">
                         <div className='animate-bounce [animation-duration:2s] ease-in-out'>
-                        <Link to="/grammer">
-                            English
-                        </Link>
-                        <span className=" text-[14px]  text-white px-1 py-0.5 rounded-full animate-bounce">
+                            <Link to="/grammer">
+                                English
+                            </Link>
+                            <span className=" text-[14px]  text-white px-1 py-0.5 rounded-full animate-bounce">
                                 ✨
                             </span>
-                            </div>
-                        </li>
-                        
-                    <li className="hover:text-white transition">About</li>
+                        </div>
+                    </li>
+
+                    <li className="hover:text-white transition">
+                        <Link to="/about">About</Link>
+                    </li>
                     <li className="hover:text-white transition">Contact</li>
                 </ul>
 
-                <button className=" text-base md:text-lg  bg-[#4d7c0f] hover:bg-[#65a30d] transition px-5 py-2 rounded-full  lg:text-xl">
-                    <Link to="/grammer">Get Started</Link> 
+                <button className="hidden sm:block text-base md:text-lg  bg-[#4d7c0f] hover:bg-[#65a30d] transition px-5 py-2 rounded-full  lg:text-xl">
+                    <Link to="/grammer">Get Started</Link>
                 </button>
 
 
@@ -65,44 +67,57 @@ const Navbar = () => {
                 >
                     {
                         menuOpen
-                            ? <IoClose size={30}  />
+                            ? <IoClose size={30} />
                             : <IoMenu size={30} />
-                            
+
                     }
                 </button>
 
             </nav>
 
-             {
+            {
                 menuOpen && (
-                    <div className="md:hidden bg-black/95 text-white px-6 py-6 space-y-5">
+                    <div className="md:hidden bg-black/95 text-white px-6 py-6 space-y-5 relative z-50">
 
-                        <Link to="/" className="block hover:text-yellow-400">
+                        <Link
+                            to="/"
+                            onClick={() => setMenuOpen(false)}
+                            className="block hover:text-yellow-400"
+                        >
                             Home
-                        </Link>
-
-                        <Link to="/features" className="block hover:text-yellow-400">
-                            Features
                         </Link>
 
                         <Link
                             to="/grammer"
-                            className="block bg-[#3579a0] text-black px-4 py-2 rounded-full w-fit font-bold"
+                            onClick={() => setMenuOpen(false)}
+                            className=" hover:text-white block bg-[#3579a0] text-black px-4 py-2 rounded-full w-fit font-bold"
                         >
                             Grammer ✨
                         </Link>
 
-                        <div className="hover:text-yellow-400">
+                        <Link
+                            to="/about"
+                            onClick={() => setMenuOpen(false)}
+                            className="block hover:text-yellow-400"
+                        >
                             About
-                        </div>
+                        </Link>
 
-                        <div className="hover:text-yellow-400">
+                        <Link
+                            to="/contact"
+                            onClick={() => setMenuOpen(false)}
+                            className="block hover:text-yellow-400"
+                        >
                             Contact
-                        </div>
+                        </Link>
 
-                        <button className="bg-[#4d7c0f] hover:bg-[#65a30d] transition px-5 py-2 rounded-full text-white">
+                        <Link
+                            to="/grammer"
+                            onClick={() => setMenuOpen(false)}
+                            className="inline-block bg-[#4d7c0f] hover:bg-[#65a30d] transition px-5 py-2 rounded-full text-white"
+                        >
                             Get Started
-                        </button>
+                        </Link>
 
                     </div>
                 )

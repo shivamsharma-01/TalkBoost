@@ -1,7 +1,7 @@
 import React from 'react'
 import Home from './home/Home'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import Features from './components/Features'
+import About from './components/About'
 import GrammarBox from './components/GrammerBox'
 import Gemini from './components/Gemini'
 import WordCard from './components/WordCard'
@@ -12,13 +12,15 @@ const App = () => {
       <BrowserRouter>
       <Routes>
         <Route path='/' element={<Home/>} />
-        <Route path='/features' element={<Features/>}/>
+        <Route path='/about' element={<About/>}/>
         <Route path='/grammer' element={<GrammarBox/>} />
         <Route path='/wordcard' element={<WordCard/>} />
       </Routes>
-      </BrowserRouter>
+      </BrowserRouter> 
 
-      {/* <Gemini/> */}
+      {/* <Gemini/>*/}
+     
+      
       
     </div>
   )

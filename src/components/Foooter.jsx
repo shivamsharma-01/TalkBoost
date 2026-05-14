@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaTwitter } from "react-icons/fa";
+import { FaLinkedin, FaTwitter } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
@@ -22,21 +22,6 @@ const Foooter = () => {
                     </div>
 
 
-                    <div className="flex flex-wrap items-center justify-center gap-6 text-sm font-medium text-gray-300">
-                        <a className="transition hover:text-cyan-400">
-                            Home
-                        </a>
-                        <a className="transition hover:text-cyan-400">
-                            Features
-                        </a>
-                        <a className="transition hover:text-cyan-400">
-                            About
-                        </a>
-                        <a className="transition hover:text-cyan-400">
-                            Contact
-                        </a>
-                    </div>
-
 
                     <div className="flex items-center gap-4">
 
@@ -45,15 +30,17 @@ const Foooter = () => {
                             href="https://www.instagram.com/shivam_sharma._01/"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="rounded-full border border-white/10 p-3 text-gray-300 transition hover:border-cyan-400 hover:text-cyan-400"
+                            className="text-3xl rounded-full border border-white/10 p-3 text-gray-300 transition hover:border-cyan-400 hover:text-cyan-400"
                         >
                             <FaInstagram />
                         </a>
 
                         <a
-                            href="#"
-                            className="rounded-full border border-white/10 p-3 text-gray-300 transition hover:border-cyan-400 hover:text-cyan-400">
-                            <FaTwitter />
+                            href="https://www.linkedin.com/in/shivam-sharma-16a63437a/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-3xl rounded-full border border-white/10 p-3 text-gray-300 transition hover:border-cyan-400 hover:text-cyan-400">
+                            <FaLinkedin />
                         </a>
 
                     </div>
