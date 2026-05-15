@@ -77,7 +77,7 @@ const Navbar = () => {
 
             {
                 menuOpen && (
-                    <div className="md:hidden bg-black/95 text-white px-6 py-6 space-y-5 relative z-50">
+                    <div className="md:hidden bg-black/95 text-white px-6 py-6 space-y-10 right-0 absolute z-50">
 
                         <Link
                             to="/"

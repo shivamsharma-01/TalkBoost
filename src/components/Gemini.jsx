@@ -13,7 +13,6 @@ export default function Gemini() {
     }
   ]);
 
-  // Paste your Gemini API key here
   const API_KEY = 'AIzaSyAP0Bh5J3NDKacRX70uKVns1RDj556ZH0U';
 
   const sendMessage = async () => {
