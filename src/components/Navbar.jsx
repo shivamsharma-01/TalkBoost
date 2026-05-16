@@ -38,10 +38,10 @@ const Navbar = () => {
                     <li className="hover:text-white transition">
                         <Link to="/">Home</Link></li>
 
-                    <li className="hover:text-white  transition  rounded-4xl p-1 pl-5 bg-[#3579a0] text-black text-lg font-bold ">
+                    <li className="hover:text-white  transition  rounded-4xl p-1 pl-5 bg-[#6f5012] text-black text-lg font-bold ">
                         <div className='animate-bounce [animation-duration:2s] ease-in-out'>
                             <Link to="/grammer">
-                                English
+                                Sections
                             </Link>
                             <span className=" text-[14px]  text-white px-1 py-0.5 rounded-full animate-bounce">
                                 ✨

@@ -3,19 +3,19 @@ import Navbar from '../components/Navbar'
 import Foooter from '../components/Foooter'
 import { motion } from "motion/react"
 import { IoRocket } from "react-icons/io5";
-
+import { Link } from 'react-router-dom'
 
 
 const Home = () => {
     return (
-        <div className='bg-[#2d3c45]'>
+        <div className='bg-[#121a20]'>
 
 
 
             <div className="min-h-screen bg-linear-to-r   text-white overflow-hidden">
 
-                <div className="absolute top-0 left-0 w-72 h-72 bg-[#8b5cf6]/20 blur-3xl rounded-full" />
-                <div className=" md:absolute top-[35%] left-[67%] w-[23%] h-[34%] bg-[#606077] blur-3xl rounded-full" />
+                <div className="absolute top-0 left-0 w-72 h-70 bg-[#253234] blur-3xl rounded-full" />
+                <div className=" md:absolute top-[39%] left-[68%] w-[20%] h-[30%] bg-[#000000] blur-3xl rounded-full" />
                 <div className="absolute bottom-0 right-0 w-72 h-72 bg-[#1e293b]/4 blur-3xl rounded-full" />
 
 
@@ -28,7 +28,7 @@ const Home = () => {
                     viewport={{ once: true }}
                 >
 
-                    <section className="relative z-10 flex flex-col items-start justify-center text-center px-10 pt-20 md:pt-28">
+                    <section className=" relative z-10 flex flex-col items-start justify-center text-center px-10 pt-20 md:pt-28">
                         <motion.div
                             initial={{ opacity: 0, y: 50 }}
                             whileInView={{ opacity: 1, y: 0 }}
@@ -45,7 +45,7 @@ const Home = () => {
 
 
 
-                        <h1 className="text-[#fed7aa] text-5xl md:text-7xl font-bold leading-tight max-w-4xl tracking-tight">
+                        <h1 className="ml-8 md:  text-[#fed7aa] text-5xl md:text-7xl font-bold leading-tight max-w-4xl tracking-tight ">
                             <motion.div
                                 initial={{ opacity: 0, x: -50 }}
                                 whileInView={{ opacity: 1, x: 0 }}
@@ -54,7 +54,8 @@ const Home = () => {
                             >
                                 <span className='text-[#e6e8eb]'>S</span><span className='text-[#9fa4ac]'>p</span><span className='text-[#828d9d]'>e</span><span className='text-[#747f8f]'>a</span><span className='text-[#64748b]'>k</span> <span className='text-[#818997]'>English</span>
                             </motion.div>
-                            {/* <br /> */}
+
+
                             <motion.div
                                 initial={{ opacity: 0, x: 50 }}
                                 whileInView={{ opacity: 1, x: 0 }}
@@ -62,7 +63,8 @@ const Home = () => {
                                 viewport={{ once: true }}
                             >
                                 <span className=" text-[#2c7592]" >Confidently</span>
-                            </motion.div> </h1>
+                            </motion.div>
+                        </h1>
 
 
                         <div className='md:w-[50%]'>
@@ -72,7 +74,7 @@ const Home = () => {
                         </div>
 
                         <div className="mt-14 flex flex-col items-center w-full">
-                            <button className="w-28 h-28 rounded-full bg-[#fda4af] hover:scale-105 hover:bg-[#fecdd3] transition duration-300 flex items-center justify-center shadow-[0_0_60px_rgba(168,85,247,0.5)]">
+                           <Link to="/chat"><button className="w-28 h-28 rounded-full bg-[#fda4af] hover:scale-105 hover:bg-[#fecdd3] transition duration-300 flex items-center justify-center shadow-[0_0_60px_rgba(168,85,24,0.5)]">
                                 <motion.img
                                     src="robot2.png"
                                     alt="Logo"
@@ -85,7 +87,7 @@ const Home = () => {
 
                                     transition={{ type: "spring", stiffness: 300 }}
                                 />
-                            </button>
+                            </button></Link> 
 
                             <p className="mt-5 text-[zinc-400] text-sm flex justify-center">
                                 Tap to go...<span className='text-orange-600  ml-1 mt-1'><IoRocket /></span>
@@ -96,30 +98,64 @@ const Home = () => {
 
 
                         <div className="hidden md:block absolute top-35 mr-[5%] h-120 md:max-h-[50%] md:text-sm max-w-[30%] mx-auto text-center border right-2 border-white/10 bg-white/5 backdrop-blur-xl rounded-[45px] p-5 lg:text-xl">
-                            <p className="text-orange-400 text-sm mb-4">
-                                WORD OF THE DAY
-                            </p>
 
-                            <h1 className="text-5xl font-bold mb-4">
-                                Confident
-                            </h1>
-
-                            <p className="text-zinc-300 text-lg mb-6">
-                                Feeling or showing confidence in yourself.
-                            </p>
-
-                            <div className="bg-zinc-900 border border-white/10 rounded-2xl p-3 md:h-[40%] lg:h-[45%] ">
-                                <p className="text-zinc-400 text-sm mb-2">
-                                    Example Sentence
+                            <motion.div
+                                initial={{ opacity: 0, y: 80 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.3 }}
+                                viewport={{ once: true }}
+                            >
+                                <p className="text-orange-400 text-sm mb-4">
+                                    WORD OF THE DAY
                                 </p>
+                            </motion.div>
 
-                                <p className="text-white text-sm  lg:text-xl ">
-                                    She speaks English confidently during interviews.
+
+                            <motion.div
+                                initial={{ opacity: 0, y: 80 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.65 }}
+                                viewport={{ once: true }}
+                            >
+                                <h1 className="text-5xl font-bold mb-4">
+                                    Confident
+                                </h1>
+                            </motion.div>
+
+
+                            <motion.div
+                                initial={{ opacity: 0, y: 80 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 1 }}
+                                viewport={{ once: true }}
+                            >
+                                <p className="text-zinc-300 text-lg mb-6">
+                                    Feeling or showing confidence in yourself.
                                 </p>
-                            </div>
+                            </motion.div>
+
+                            <motion.div
+                                initial={{ opacity: 0, y: 80 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 1.3 }}
+                                viewport={{ once: true }}
+                            >
+
+                                <div className="bg-zinc-900 border border-white/10 rounded-2xl p-3 md:h-[40%] lg:h-[45%] ">
+                                    <p className="text-green-400 text-sm mb-2">
+                                        Example Sentence
+                                    </p>
+
+                                    <p className="text-white text-sm  lg:text-xl ">
+                                        She speaks English confidently during interviews.
+                                    </p>
+                                </div>
+                            </motion.div>
+
+
 
                         </div>
-                        {/* </section> */}
+                        
 
 
 
@@ -131,7 +167,7 @@ const Home = () => {
 
 
 
-                <section className="px-6 md:px-16 py-20 relative z-10">
+                <section className="px-6 md:px-16 py-20 relative z-10 ">
                     <motion.div
                         initial={{ opacity: 0, x: -50 }}
                         whileInView={{ opacity: 1, x: 0 }}

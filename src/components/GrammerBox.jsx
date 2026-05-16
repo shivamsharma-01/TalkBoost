@@ -41,12 +41,12 @@ const features = [
 
 export default function FeatureSection() {
     return (
-        <div className="bg-[#1d202e]">
+        <div className="bg-[#1e1f25]">
             <Navbar/>
             
-            <section className="bg-[#1d202e] text-white py-24 px-6 md:px-16">
+            <section className=" text-white py-24 px-6 md:px-16">
 
-                {/* Heading */}
+         
 
                 
                 
@@ -70,6 +70,7 @@ export default function FeatureSection() {
                         with smart AI tools.
                     </p>
                 </motion.div>
+
 
                
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7 mt-16 max-w-7xl mx-auto">
@@ -97,7 +98,7 @@ export default function FeatureSection() {
                             
                             {item.soon && (
                                 <div className="absolute top-5 right-5">
-                                    <span className="bg-yellow-400 text-black text-xs font-semibold px-3 py-1 rounded-full shadow-lg animate-pulse">
+                                    <span className="bg-red-600 text-white text-xs font-semibold px-3 py-1 rounded-full shadow-lg animate-pulse">
                                         Coming Soon
                                     </span>
                                 </div>

@@ -8,7 +8,7 @@ import { motion } from "motion/react"
 const WordCard = () => {
     return (
 
-        <div className='bg-[#1d202e]'>
+        <div className='bg-[#212638]'>
             <Navbar/>
 
             <motion.div

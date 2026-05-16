@@ -15,10 +15,10 @@ const App = () => {
         <Route path='/about' element={<About/>}/>
         <Route path='/grammer' element={<GrammarBox/>} />
         <Route path='/wordcard' element={<WordCard/>} />
+        <Route path='/chat' element={<Gemini/>} />
       </Routes>
       </BrowserRouter> 
 
-      <Gemini/>
      
       
       

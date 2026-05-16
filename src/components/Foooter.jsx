@@ -2,6 +2,8 @@ import React from 'react'
 import { FaLinkedin, FaTwitter } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { motion } from "motion/react"
+
 
 
 
@@ -22,28 +24,36 @@ const Foooter = () => {
                     </div>
 
 
-
+<motion.div
+                            initial={{ opacity: 0, y: -100 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 1.5 }}
+                            viewport={{ once: true }}
+                        >
                     <div className="flex items-center gap-4">
 
+                        
+                            <a
+                                href="https://www.instagram.com/shivam_sharma._01/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-3xl rounded-full border border-white/10 p-3 text-gray-300 transition hover:border-cyan-400 hover:text-cyan-400"
+                            >
+                                <FaInstagram />
+                            </a>
 
-                        <a
-                            href="https://www.instagram.com/shivam_sharma._01/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-3xl rounded-full border border-white/10 p-3 text-gray-300 transition hover:border-cyan-400 hover:text-cyan-400"
-                        >
-                            <FaInstagram />
-                        </a>
 
-                        <a
-                            href="https://www.linkedin.com/in/shivam-sharma-16a63437a/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-3xl rounded-full border border-white/10 p-3 text-gray-300 transition hover:border-cyan-400 hover:text-cyan-400">
-                            <FaLinkedin />
-                        </a>
+                        
+                            <a
+                                href="https://www.linkedin.com/in/shivam-sharma-16a63437a/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-3xl rounded-full border border-white/10 p-3 text-gray-300 transition hover:border-cyan-400 hover:text-cyan-400">
+                                <FaLinkedin />
+                            </a>
+                       
 
-                    </div>
+                    </div> </motion.div>
                 </div>
 
 
