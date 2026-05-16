@@ -16,7 +16,7 @@ const Foooter = () => {
 
                     <div className="max-w-md text-center md:text-left">
                         <h2 className="text-2xl font-bold tracking-wide text-[#fecdd3]">
-                            Your <span className="text-[#fca5a5]">Voice</span>
+                            Lear<span className="text-[#fca5a5]">ner</span>
                         </h2>
                         <p className="mt-2 text-sm text-gray-400 leading-relaxed">
                             Improve your English speaking and communication skills with AI-powered conversations, grammar correction, and real-time feedback.

@@ -29,25 +29,33 @@ const Navbar = () => {
                         className='h-12 '
                     />
 
-
-                    <span className="text-[#d7e4f7] mt-1.5">Your</span>
-                    <span className="text-[#fca5a5] mt-1.5">Voice</span>
+        <div className='sm:text-3xl'>
+                    <span className="text-[#d7e4f7] mt-1.5">Lear</span>
+                    <span className="text-[#fca5a5] mt-1.5">ner</span>
+                </div>
+                
                 </div>
 
                 <ul className="hidden md:flex items-center gap-8 text-zinc-300 lg:gap-17">
                     <li className="hover:text-white transition">
                         <Link to="/">Home</Link></li>
 
-                    <li className="hover:text-white  transition  rounded-4xl p-1 pl-5 bg-[#6f5012] text-black text-lg font-bold ">
-                        <div className='animate-bounce [animation-duration:2s] ease-in-out'>
-                            <Link to="/grammer">
+
+                    <Link to="/grammer">
+
+                        <li className="hover:text-white  transition  rounded-4xl p-1 pl-5 bg-[#866628] text-black text-lg font-bold ">
+
+                            <div className='animate-bounce [animation-duration:2s] ease-in-out'>
+
                                 Sections
-                            </Link>
-                            <span className=" text-[14px]  text-white px-1 py-0.5 rounded-full animate-bounce">
-                                ✨
-                            </span>
-                        </div>
-                    </li>
+
+                                <span className=" text-[14px]  text-white px-1 py-0.5 rounded-full animate-bounce">
+                                    ✨
+                                </span>
+                            </div>
+
+                        </li>
+                    </Link>
 
                     <li className="hover:text-white transition">
                         <Link to="/about">About</Link>
