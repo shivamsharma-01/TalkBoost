@@ -26,7 +26,7 @@ const About = () => {
                     <div className="max-w-7xl mx-auto">
 
 
-                        {/* Heading */}
+                        
                         <div className="text-center mb-20">
                             <p className="text-orange-400 uppercase tracking-[6px] text-sm mb-4">
                                 About English Speak
@@ -60,10 +60,10 @@ const About = () => {
                             </p>
                         </div>
 
-                        {/* Main Layout */}
+                      
                         <div className="grid lg:grid-cols-2 gap-10">
 
-                            {/* Left Big Card */}
+                          
                             <div className="bg-linear-to-br from-orange-500 to-yellow-400 rounded-[40px] p-10 text-black relative overflow-hidden">
 
                                 <div className="absolute top-0 right-0 w-52 h-52 bg-white/20 rounded-full blur-3xl"></div>
@@ -88,16 +88,12 @@ const About = () => {
                                             with a clean and beginner-friendly platform.
                                         </p>
 
-                                        <button className="mt-10 bg-black text-white px-7 py-4 rounded-2xl font-semibold hover:scale-105 transition">
-                                            Start Practice
-                                        </button>
 
                                     </div>
                                 </motion.div>
 
                             </div>
 
-                            {/* Right Grid */}
 
 
                             <div className="grid sm:grid-cols-2 gap-6">
