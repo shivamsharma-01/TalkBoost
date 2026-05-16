@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import { Send } from 'lucide-react';
 import { RiGeminiFill } from "react-icons/ri";
 import Navbar from './Navbar';
+import Foooter from './Foooter';
+import { motion } from "framer-motion"
+
 
 export default function Gemini() {
 
@@ -87,23 +90,52 @@ export default function Gemini() {
 
       <Navbar />
 
+<motion.div
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.7 }}
+                    viewport={{ once: true }}
+                >
       <div className=' flex flex-col md:flex-row items-center justify-center  px- py-10 '>
 
-        <div className=' w-75 md:w-100 '>
+        <div className=' md:mr-[4%] md:ml-[1%] text-center w-75 md:w-100 '>
           {/* <img src="geminipage-bot.png" alt="" /> */}
-          <p className="text-blue-400 font-semibold mb-3">
+
+          <motion.div
+                              initial={{ opacity: 0, x: 60 }}
+                              whileInView={{ opacity: 1, x: 0 }}
+                              transition={{ duration: 0.7 }}
+                              viewport={{ once: true }}
+                          >
+          <p className="text-[#fcfccd] text-2xl md:text-5xl font-bold mb-3">
             ⚡ AI Assistant
-          </p>
+          </p></motion.div>
 
-          <h1 className="text-5xl font-bold leading-tight mb-6">
+
+          <motion.div
+                              initial={{ opacity: 0, x: -60 }}
+                              whileInView={{ opacity: 1, x: 0 }}
+                              transition={{ duration: 0.7 }}
+                              viewport={{ once: true }}
+                          >
+
+          <h1 className="text-[#e991ff] text-5xl font-bold leading-tight mb-6">
             Code Smarter <br /> With AI 🚀
-          </h1>
+          </h1></motion.div>
 
-          <p className="text-gray-400 text-lg leading-8 mb-8">
+
+          <motion.div
+                              initial={{ opacity: 0, y: 60 }}
+                              whileInView={{ opacity: 1, y: 0 }}
+                              transition={{ duration: 1.2 }}
+                              viewport={{ once: true }}
+                          >
+
+          <p className="text-gray-100 text-lg leading-8 mb-8">
             Ask coding questions, generate ideas,
             fix bugs, and learn faster with your
             personal AI assistant.
-          </p>
+          </p></motion.div>
 
         </div>
 
@@ -179,12 +211,39 @@ export default function Gemini() {
         </div>
 
 
-        <div className='w-75 md:w-90 '>
-          <img src="robot2.png" alt="" />
+        <div className=' w-75 md:w-80 md:mr-20'>
+          <motion.img
+                                    src="robot2.png"
+                                    alt="Logo"
+                                    initial={{ opacity: 0, x: -50 }}
+                                    animate={{ opacity: 1, x: 0 }}
+                                    whileHover={{
+                                        scale: 1.3,
+                                        rotate: 5
+                                    }}
+
+                                    transition={{ type: "spring", stiffness: 300 }}
+                                />
+<motion.div
+                    initial={{ opacity: 0, y: 60 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1 }}
+                    viewport={{ once: true }}
+                >
+          <p className="text-center text-white text-lg leading-8 mb-8">
+            
+            <span className='text-[#f497e1]'>Smarter Conversations,</span>
+            <br></br>Better Productivity...
+          </p></motion.div>
+          
         </div>
 
 
       </div>
+
+</motion.div>
+
+      <Foooter/>
     </div>
   );
 }

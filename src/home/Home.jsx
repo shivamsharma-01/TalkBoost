@@ -45,7 +45,7 @@ const Home = () => {
 
 
 
-                        <h1 className="ml-8 md:  text-[#fed7aa] text-5xl md:text-7xl font-bold leading-tight max-w-4xl tracking-tight ">
+                        <h1 className="md:ml-10 md:  text-[#fed7aa] text-4xl md:text-7xl font-bold leading-tight max-w-4xl tracking-tight  ">
                             <motion.div
                                 initial={{ opacity: 0, x: -50 }}
                                 whileInView={{ opacity: 1, x: 0 }}
@@ -74,7 +74,7 @@ const Home = () => {
                         </div>
 
                         <div className="mt-14 flex flex-col items-center w-full">
-                           <Link to="/chat"><button className="w-28 h-28 rounded-full bg-[#fda4af] hover:scale-105 hover:bg-[#fecdd3] transition duration-300 flex items-center justify-center shadow-[0_0_60px_rgba(168,85,24,0.5)]">
+                            <Link to="/chat"><button className="w-28 h-28 rounded-full bg-[#fda4af] hover:scale-105 hover:bg-[#fecdd3] transition duration-300 flex items-center justify-center shadow-[0_0_60px_rgba(168,85,24,0.5)]">
                                 <motion.img
                                     src="robot2.png"
                                     alt="Logo"
@@ -87,7 +87,7 @@ const Home = () => {
 
                                     transition={{ type: "spring", stiffness: 300 }}
                                 />
-                            </button></Link> 
+                            </button></Link>
 
                             <p className="mt-5 text-[zinc-400] text-sm flex justify-center">
                                 Tap to go...<span className='text-orange-600  ml-1 mt-1'><IoRocket /></span>
@@ -155,7 +155,7 @@ const Home = () => {
 
 
                         </div>
-                        
+
 
 
 
@@ -185,14 +185,18 @@ const Home = () => {
                                 Speak English For 2 Minutes
                             </h1>
 
-                            <p className="text-zinc-300 max-w-2xl leading-relaxed">
+                            <p className=" text-zinc-300 max-w-2xl leading-relaxed">
                                 Try introducing yourself in English without stopping.
                                 Focus on clarity and confidence while speaking.
                             </p>
 
-                            <button className="mt-8 px-8 py-4 rounded-full bg-white text-black font-semibold hover:scale-105 transition duration-300 hover:bg-green-600">
-                                Start Challenge
-                            </button>
+
+                            <Link to="/challenge">
+                                <button className="mt-8 px-8 py-4 rounded-full bg-white text-black font-semibold hover:scale-105 transition duration-300 hover:bg-green-600 hover:text-white">
+                                    Start Challenge
+                                </button>
+                            </Link>
+
 
                         </div>
                     </motion.div>
@@ -206,9 +210,96 @@ const Home = () => {
             </div >
 
 
+            <section className="px-6 md:px-16  relative z-10">
+
+                <motion.div
+                    initial={{ opacity: 0, y: 80 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1 }}
+                    viewport={{ once: true }}
+                >
+                    <div className="max-w-5xl mx-auto bg-white/10 border border-white/10 rounded-[40px] p-8 backdrop-blur-xl">
+
+                        <motion.div
+                            initial={{ opacity: 0, y: 80 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 1 }}
+                            viewport={{ once: true }}
+                        >
+                            <h1 className="text-3xl font-bold mb-8 text-white/90">
+                                AI Conversation
+                            </h1></motion.div>
+
+                        <div className="space-y-6">
+
+                            <motion.div
+                                initial={{ opacity: 0, y: 80 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 1 }}
+                                viewport={{ once: true }}
+                            >
+
+                                <div className="flex justify-end">
+                                    <div className="bg-purple-600 px-6 py-4 rounded-3xl max-w-md">
+                                        Hello AI, can you help me improve my fluency?
+                                    </div>
+                                </div>
+                            </motion.div>
+
+                            <motion.div
+                                initial={{ opacity: 0, y: 80 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 1 }}
+                                viewport={{ once: true }}
+                            >
+                                <div className="flex justify-start">
+                                    <div className="bg-zinc-900 border border-white/10 px-6 py-4 rounded-3xl max-w-md text-zinc-300">
+                                        Of course! Practice speaking daily and try thinking in English.
+                                    </div>
+                                </div>
+                            </motion.div>
 
 
-            <section className="px-6 md:px-16  relative z-10 ">
+                            <motion.div
+                                initial={{ opacity: 0, y: 80 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 1 }}
+                                viewport={{ once: true }}
+                            >
+                                <div className="flex justify-end">
+                                    <div className="bg-purple-600 px-6 py-4 rounded-3xl max-w-md">
+                                        How can I improve pronunciation?
+                                    </div>
+                                </div>
+                            </motion.div>
+
+
+                            <motion.div
+                                initial={{ opacity: 0, y: 80 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 1 }}
+                                viewport={{ once: true }}
+                            >
+
+                                <div className="flex justify-start">
+                                    <div className="bg-zinc-900 border border-white/10 px-6 py-4 rounded-3xl max-w-md text-zinc-300">
+                                        Listen carefully to native speakers and repeat sentences loudly.
+                                    </div>
+                                </div>
+                            </motion.div>
+
+
+                        </div>
+
+                    </div>
+                </motion.div>
+
+            </section>
+
+
+
+
+            <section className="px-6 mt-20 md:px-16  relative z-10 ">
                 <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-6">
 
 
@@ -326,96 +417,6 @@ const Home = () => {
 
                 </div>
             </section>
-
-
-
-            <section className="px-6 md:px-16 py-20 relative z-10">
-
-                <motion.div
-                    initial={{ opacity: 0, y: 80 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 1 }}
-                    viewport={{ once: true }}
-                >
-                    <div className="max-w-5xl mx-auto bg-white/10 border border-white/10 rounded-[40px] p-8 backdrop-blur-xl">
-
-                        <motion.div
-                            initial={{ opacity: 0, y: 80 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 1 }}
-                            viewport={{ once: true }}
-                        >
-                            <h1 className="text-3xl font-bold mb-8 text-white/90">
-                                AI Conversation
-                            </h1></motion.div>
-
-                        <div className="space-y-6">
-
-                            <motion.div
-                                initial={{ opacity: 0, y: 80 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 1 }}
-                                viewport={{ once: true }}
-                            >
-
-                                <div className="flex justify-end">
-                                    <div className="bg-purple-600 px-6 py-4 rounded-3xl max-w-md">
-                                        Hello AI, can you help me improve my fluency?
-                                    </div>
-                                </div>
-                            </motion.div>
-
-                            <motion.div
-                                initial={{ opacity: 0, y: 80 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 1 }}
-                                viewport={{ once: true }}
-                            >
-                                <div className="flex justify-start">
-                                    <div className="bg-zinc-900 border border-white/10 px-6 py-4 rounded-3xl max-w-md text-zinc-300">
-                                        Of course! Practice speaking daily and try thinking in English.
-                                    </div>
-                                </div>
-                            </motion.div>
-
-
-                            <motion.div
-                                initial={{ opacity: 0, y: 80 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 1 }}
-                                viewport={{ once: true }}
-                            >
-                                <div className="flex justify-end">
-                                    <div className="bg-purple-600 px-6 py-4 rounded-3xl max-w-md">
-                                        How can I improve pronunciation?
-                                    </div>
-                                </div>
-                            </motion.div>
-
-
-                            <motion.div
-                                initial={{ opacity: 0, y: 80 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 1 }}
-                                viewport={{ once: true }}
-                            >
-
-                                <div className="flex justify-start">
-                                    <div className="bg-zinc-900 border border-white/10 px-6 py-4 rounded-3xl max-w-md text-zinc-300">
-                                        Listen carefully to native speakers and repeat sentences loudly.
-                                    </div>
-                                </div>
-                            </motion.div>
-
-
-                        </div>
-
-                    </div>
-                </motion.div>
-
-            </section>
-
-
 
 
 

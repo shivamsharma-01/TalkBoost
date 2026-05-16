@@ -5,6 +5,7 @@ import About from './components/About'
 import GrammarBox from './components/GrammerBox'
 import Gemini from './components/Gemini'
 import WordCard from './components/WordCard'
+import Challenge from './components/Challenge'
 
 const App = () => {
   return (
@@ -16,8 +17,10 @@ const App = () => {
         <Route path='/grammer' element={<GrammarBox/>} />
         <Route path='/wordcard' element={<WordCard/>} />
         <Route path='/chat' element={<Gemini/>} />
+        <Route path='/challenge' element={<Challenge/>}/>
       </Routes>
       </BrowserRouter> 
+      
 
      
       
