@@ -41,7 +41,7 @@ const features = [
 
 export default function FeatureSection() {
     return (
-        <div className="bg-[#1e1f25]">
+        <div className="bg-[#1d202e] ">
             <Navbar/>
             
             <section className=" text-white py-24 px-6 md:px-16">
@@ -56,13 +56,13 @@ export default function FeatureSection() {
                     transition={{ duration: 0.5 }}
                     className="text-center max-w-2xl mx-auto"
                 >
-                    <p className="text-[#84cc16] font-semibold tracking-widest mb-3">
+                    <p className="text-orange-400 font-semibold tracking-widest mb-3">
                         FEATURES
                     </p>
 
                     <h2 className="text-4xl md:text-5xl font-bold leading-tight">
                         Improve Your
-                        <span className="text-[#84cc16]"> English Skills</span>
+                        <span className="text-[#8bb748]"> English Skills</span>
                     </h2>
 
                     <p className="text-zinc-400 mt-5 leading-relaxed">
@@ -105,7 +105,7 @@ export default function FeatureSection() {
                             )}
 
                             
-                            <div className="w-16 h-16 rounded-2xl bg-[#84cc16]/10 text-[#84cc16] flex items-center justify-center mb-6 border border-[#84cc16]/20">
+                            <div className="w-16 h-16 rounded-2xl bg-[#84cc16]/10 text-orange-400 flex items-center justify-center mb-6 border border-[#84cc16]/20">
                                 {item.icon}
                             </div>
 

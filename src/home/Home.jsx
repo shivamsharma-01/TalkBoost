@@ -89,7 +89,7 @@ const Home = () => {
                                 />
                             </button></Link>
 
-                            <p className="mt-5 text-[zinc-400] text-sm flex justify-center">
+                            <p className="mt-5 text-[#f6e998] text-md font-medium flex justify-center">
                                 Tap to go...<span className='text-orange-600  ml-1 mt-1'><IoRocket /></span>
                             </p>
                         </div>
