@@ -53,7 +53,8 @@ const Home = () => {
                                 transition={{ duration: 0.8 }}
                                 viewport={{ once: true }}
                             >
-                                <span className='text-[#e6e8eb]'>S</span><span className='text-[#9fa4ac]'>p</span><span className='text-[#828d9d]'>e</span><span className='text-[#747f8f]'>a</span><span className='text-[#64748b]'>k</span> <span className='text-[#818997]'>English</span>
+                                <span className='text-[#f2f5fa]'>S</span><span className='text-[#dadce0]'>p</span><span className='text-[#babec3]'>e</span><span className='text-[#b0b5bb]'>a</span><span className='text-[#b0b4b8]'>k</span> 
+                                {/* <span className='text-[#818997]'>English</span> */}
                             </motion.div>
 
 
@@ -63,7 +64,7 @@ const Home = () => {
                                 transition={{ duration: 0.8 }}
                                 viewport={{ once: true }}
                             >
-                                <span className=" text-[#2c7592]" >Confidently</span>
+                                <span className=" text-[#4691af]" >Confidently</span>
                             </motion.div>
                         </h1>
 
