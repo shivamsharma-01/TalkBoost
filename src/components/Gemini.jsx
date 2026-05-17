@@ -17,7 +17,7 @@ export default function Gemini() {
     }
   ]);
 
-  const API_KEY = 'AIzaSyAP0Bh5J3NDKacRX70uKVns1RDj556ZH0U';
+  const API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
 
   const sendMessage = async () => {
 
