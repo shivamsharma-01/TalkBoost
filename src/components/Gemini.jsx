@@ -20,6 +20,7 @@ export default function Gemini() {
   ]);
 
   const API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
+  
 
   const sendMessage = async () => {
 
@@ -39,7 +40,7 @@ export default function Gemini() {
     try {
 
       const response = await fetch(
-        `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${API_KEY}`,
+        `https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent?key=${API_KEY}`,
         {
           method: 'POST',
           headers: {
@@ -62,6 +63,11 @@ export default function Gemini() {
 
       const data = await response.json();
 
+      
+
+// console.log("DATA:", data);
+// console.log("STATUS:", response.status);
+
       const botReply =
         data?.candidates?.[0]?.content?.parts?.[0]?.text;
 
@@ -69,7 +75,7 @@ export default function Gemini() {
         ...prev,
         {
           sender: 'bot',
-          text: botReply || 'No response from AI 😅'
+          text: botReply || 'No response from AI 😅',
         }
       ]);
 
@@ -98,7 +104,7 @@ export default function Gemini() {
                     transition={{ duration: 0.7 }}
                     viewport={{ once: true }}
                 >
-      <div className=' flex flex-col md:flex-row items-center justify-center  px- py-10 '>
+      <div className=' flex flex-col md:flex-row items-center justify-center  px-4 py-10 '>
 
         <div className=' md:mr-[4%] md:ml-[1%] text-center w-75 md:w-100 '>
           {/* <img src="geminipage-bot.png" alt="" /> */}
