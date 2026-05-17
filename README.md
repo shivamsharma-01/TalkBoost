@@ -1,4 +1,4 @@
-# 🚀 AI Speak – Communication Improvement Platform
+# 🚀 TalkBoost – Communication Improvement Platform
 
 AI Speak is a modern React-based communication improvement website designed to help users practice speaking, improve confidence, and interact with an AI assistant.
 
