@@ -1,7 +1,7 @@
 import React from "react";
 import { Brain, Globe, Headphones, Rocket } from "lucide-react";
-import Navbar from "./Navbar";
-import Foooter from "./Foooter";
+import Navbar from "../components/Navbar";
+import Foooter from "../components/Foooter";
 import { motion } from "motion/react"
 
 

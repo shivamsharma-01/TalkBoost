@@ -5,9 +5,9 @@ import {
     MessageSquareText,
     Bot,
 } from "lucide-react";
-import Navbar from "./Navbar";
+import Navbar from "../components/Navbar";
 import { link } from "motion/react-client";
-import Foooter from "./Foooter";
+import Foooter from "../components/Foooter";
 import { Link } from "react-router-dom";
 
 const features = [

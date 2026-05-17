@@ -1,7 +1,7 @@
 import React from 'react'
 import words from '../data/Words';
-import Navbar from './Navbar';
-import Foooter from './Foooter';
+import Navbar from '../components/Navbar';
+import Foooter from '../components/Foooter';
 import { motion } from "motion/react"
 
 
