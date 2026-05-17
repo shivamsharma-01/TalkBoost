@@ -4,7 +4,7 @@ AI Speak is a modern React-based communication improvement website designed to h
 
 ## 🌐 Live Website
 
-https://communication-improvement.vercel.app/
+https://talk-boost-xi.vercel.app/
 
 ---
 
