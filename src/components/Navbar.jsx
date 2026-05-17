@@ -111,12 +111,13 @@ const Navbar = () => {
                             About
                         </Link>
 
-                        
+                        <Link
+                            to="/contact"
                             onClick={() => setMenuOpen(false)}
                             className="block hover:text-yellow-400"
-                        
+                        >
                             Contact
-                        
+                        </Link>
 
                         <Link
                             to="/grammer"
