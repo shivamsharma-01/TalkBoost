@@ -1,6 +1,6 @@
 # 🚀 TalkBoost – Communication Improvement Platform
 
-AI Speak is a modern React-based communication improvement website designed to help users practice speaking, improve confidence, and interact with an AI assistant.
+TalkBoost is a modern React-based communication improvement website designed to help users practice speaking, improve confidence, and interact with an AI assistant.
 
 ## 🌐 Live Website
 
@@ -36,4 +36,5 @@ https://talk-boost-xi.vercel.app/
 Clone the repository:
 
 ```bash
-git clone https://github.com/shivamsharma-01/Communication-Improvement.git
+git clone https://github.com/shivamsharma-01/TalkBoost.git
+```
