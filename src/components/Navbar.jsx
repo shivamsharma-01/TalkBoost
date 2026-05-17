@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { motion } from "framer-motion"
 import { IoMenu } from "react-icons/io5";
 import { IoClose } from "react-icons/io5";
-
+import robot1 from '../assets/robot1.png';
 
 
 
@@ -17,7 +17,7 @@ const Navbar = () => {
 
                     <motion.img
 
-                        src="robot1.png" alt="Logo"
+                        src={robot1} alt="Logo"
                         animate={{
                             y: [0, -5, 0]
                         }}

@@ -4,6 +4,8 @@ import { RiGeminiFill } from "react-icons/ri";
 import Navbar from './Navbar';
 import Foooter from './Foooter';
 import { motion } from "framer-motion"
+import robot2 from '../assets/robot2.png';
+
 
 
 export default function Gemini() {
@@ -213,7 +215,7 @@ export default function Gemini() {
 
         <div className=' w-75 md:w-80 md:mr-20'>
           <motion.img
-                                    src="robot2.png"
+                                    src={robot2}
                                     alt="Logo"
                                     initial={{ opacity: 0, x: -50 }}
                                     animate={{ opacity: 1, x: 0 }}

@@ -4,6 +4,7 @@ import Foooter from '../components/Foooter'
 import { motion } from "motion/react"
 import { IoRocket } from "react-icons/io5";
 import { Link } from 'react-router-dom'
+import robot2 from '../assets/robot2.png';
 
 
 const Home = () => {
@@ -28,7 +29,7 @@ const Home = () => {
                     viewport={{ once: true }}
                 >
 
-                    <section className=" relative z-10 flex flex-col items-start justify-center text-center px-10 pt-20 md:pt-28">
+                    <section className=" relative z-10 flex flex-col items-center sm:items-start justify-center text-center px-10 pt-20 md:pt-28">
                         <motion.div
                             initial={{ opacity: 0, y: 50 }}
                             whileInView={{ opacity: 1, y: 0 }}
@@ -45,7 +46,7 @@ const Home = () => {
 
 
 
-                        <h1 className="md:ml-10 md:  text-[#fed7aa] text-4xl md:text-7xl font-bold leading-tight max-w-4xl tracking-tight  ">
+                        <h1 className="md:ml-10   text-[#fed7aa] text-4xl md:text-7xl font-bold leading-tight max-w-4xl tracking-tight  ">
                             <motion.div
                                 initial={{ opacity: 0, x: -50 }}
                                 whileInView={{ opacity: 1, x: 0 }}
@@ -76,7 +77,7 @@ const Home = () => {
                         <div className="mt-14 flex flex-col items-center w-full">
                             <Link to="/chat"><button className="w-28 h-28 rounded-full bg-[#fda4af] hover:scale-105 hover:bg-[#fecdd3] transition duration-300 flex items-center justify-center shadow-[0_0_60px_rgba(168,85,24,0.5)]">
                                 <motion.img
-                                    src="robot2.png"
+                                    src={robot2}
                                     alt="Logo"
                                     initial={{ opacity: 0, x: -50 }}
                                     animate={{ opacity: 1, x: 0 }}
