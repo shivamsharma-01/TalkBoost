@@ -104,7 +104,7 @@ export default function Gemini() {
                     transition={{ duration: 0.7 }}
                     viewport={{ once: true }}
                 >
-      <div className=' flex flex-col md:flex-row items-center justify-center  px-4 py-10 '>
+      <div className=' flex flex-col md:flex-row items-center justify-center  px- py-10 '>
 
         <div className=' md:mr-[4%] md:ml-[1%] text-center w-75 md:w-100 '>
           {/* <img src="geminipage-bot.png" alt="" /> */}
